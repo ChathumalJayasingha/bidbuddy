@@ -1,0 +1,34 @@
+export const baseUrl = 'http://103.125.216.56:8007';
+
+export const signInUrl = '/auth/api/v1/signIn';
+export const createUpdateUserUrl = '/auth/api/v1/create';
+export const changePasswordUrl = '/auth/api/v1/changePassword';
+export const deleteUserUrl = '/auth/api/v1/delete';
+export const refreshTokenUrl = '/auth/api/v1/refreshToken';
+export const findAllUsersUrl = 'auth/api/v1/findAllUsers';
+export const findUserByIdUrl = '/auth/api/v1/findUserById';
+export const simpleUpdateUrl = '/auth/api/v1/simpleUpdate';
+export const updateWorkPlaceUrl = '/workplace/api/v1/update';
+export const createWorkPlaceUrl = '/workplace/api/v1/create';
+export const searchWorkPlaceUrl = '/workplace/api/v1/search';
+export const searchBusinessPlansUrl = '/business/api/v1/plan/getAll';
+export const creteOrUpdateBusinessPlanUrl = '/business/api/v1/plan/create';
+export const deleteBusinessPlanUrl = '/business/api/v1/plan/delete';
+export const getAllItemsByPlanUrl = '/business/api/v1/item/getAll';
+export const createOrUpdateItemUrl = '/business/api/v1/item/create';
+export const deleteItemUrl = '/business/api/v1/item/delete';
+export const createOrUpdateShopUrl = '/business/api/v1/shop/create';
+export const findAllShopsUrl = '/business/api/v1/shop/getAll';
+export const deleteShopUrl = '/business/api/v1/shop/delete';
+export const findAllOrdersUrl = '/business/api/v1/order/getAll';
+export const findAllOrdersByUserUrl = '/business/api/v1/order/getAllByUser';
+export const createOrUpdateOrdersUrl = '/business/api/v1/order/create';
+export const findOrderDetailsUrl = '/business/api/v1/orderDetail/getAll';
+export const findPaymentHistoryUrl = '/business/api/v1/order/payment-history';
+export const addNewPaymentUrl = '/business/api/v1/order/add-payment';
+export const deletePaymentUrl = '/business/api/v1/order/delete-payment';
+export const deleteOrderUrl = '/business/api/v1/order/delete';
+export const updatePaymentStatusUrl = '/business/api/v1/order/payment-status/update';
+export const allBusinessTypesUrl = '/common/api/v1/businessTypes/getAll';
+export const allCategoriesUrl = '/common/api/v1/categories/getAll';
+
