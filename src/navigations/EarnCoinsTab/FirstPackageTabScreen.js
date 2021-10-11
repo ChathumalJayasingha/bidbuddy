@@ -6,8 +6,9 @@ import moduleName, { colors } from '../../configurations/constants'
 
 
 
-export default class FirstPackageTabScreen extends Component {
-    render() {
+export default function Payment(props){
+    
+    
         return (
             <ScrollView style={styles.mainWrap}>
 
@@ -25,7 +26,11 @@ export default class FirstPackageTabScreen extends Component {
                 <Text style={styles.footerText}>
                     You will receive 1050 coins form this package .Please not that there are no hidden charges included.
                 </Text>
-                <Button  mode="outlined" color='orange' style={styles.button}>BUY NOW</Button>
+                <Button  mode="outlined"
+                 onPress={()=>{
+                        props.navigation.navigate('Payment')
+                }} 
+                color='orange' style={styles.button}>BUY NOW</Button>
                 </LinearGradient>
             </View>
 
@@ -43,7 +48,11 @@ export default class FirstPackageTabScreen extends Component {
                 <Text style={styles.footerText}>
                     You will receive 1050 coins form this package .Please not that there are no hidden charges included.
                 </Text>
-                <Button  mode="outlined" color='orange' style={styles.button}>BUY NOW</Button>
+                <Button 
+                                 onPress={()=>{
+                                    props.navigation.navigate('Payment')
+                            }} 
+                mode="outlined" color='orange' style={styles.button}>BUY NOW</Button>
                 </LinearGradient>
             </View>
 
@@ -62,14 +71,18 @@ export default class FirstPackageTabScreen extends Component {
                 <Text style={styles.footerText}>
                     You will receive 1050 coins form this package .Please not that there are no hidden charges included.
                 </Text>
-                <Button  mode="outlined" color='orange' style={styles.button}>BUY NOW</Button>
+                <Button 
+                                 onPress={()=>{
+                                    props.navigation.navigate('Payment')
+                            }} 
+                mode="outlined" color='orange' style={styles.button}>BUY NOW</Button>
                 </LinearGradient>
             </View>
 
             </ScrollView>
 
         )
-    }
+    
 }
 var styles = StyleSheet.create({
     cardWrap:{

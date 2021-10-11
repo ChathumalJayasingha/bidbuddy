@@ -20,6 +20,10 @@ import MenuTab from "../HomePageTab/MenuTab";
 import EarnCoinPage from "../../views/EarnCoinPage";
 import Help from "../../views/Help";
 import Drawer from '../drawer/DrawerNavigation'
+import Payment from "../../views/Payment";
+import History from "../../views/History";
+
+
 
 const Stack = createStackNavigator();
 
@@ -152,6 +156,7 @@ export default class StackNavigation extends Component {
                               }}
                               
                 />
+
                 <Stack.Screen options={{headerShown: false}} name="FirstPage" component={FirstPage}/>
                 <Stack.Screen options={{headerShown: false}} name="SecondPage" component={SecondPage}/>
                 <Stack.Screen options={{headerShown: false}} name="ThirdPage" component={ThirdPage}/>
@@ -163,8 +168,24 @@ export default class StackNavigation extends Component {
                     headerShown: true,
                     headerTitleAlign: 'center',
                     headerTintColor: 'white',
+                    title: 'Payment',
+                }} name="Payment" component={Payment}/>
+
+
+                <Stack.Screen options={{
+                    headerShown: true,
+                    headerTitleAlign: 'center',
+                    headerTintColor: 'white',
                     title: 'Sign in',
                 }} name="SignIn" component={SignIn}/>
+
+                <Stack.Screen options={{
+                    headerShown: true,
+                    headerTitleAlign: 'center',
+                    headerTintColor: 'white',
+                    title: 'History',
+                }} name="History" component={History}/>
+
 
 
 

@@ -33,7 +33,7 @@ export default function DrawerContent(props) {
                                    source={require('../../assets/coin.gif')}/>
                             <TouchableOpacity  style={{flex:1,width:40,height:40,justifyContent:'center',
                                 alignItems:'center'}}>
-                                <Text>4634</Text>
+                                <Text>1235</Text>
                             </TouchableOpacity>
 
                             <TouchableOpacity
@@ -91,6 +91,10 @@ export default function DrawerContent(props) {
                     <DrawerItem
                         label="Login"
                         onPress={() => {props.navigation.navigate('SignIn')}}
+                    />
+                    <DrawerItem
+                        label="History"
+                        onPress={() => {props.navigation.navigate('History')}}
                     />
                     <DrawerItem
                         label="Logout"

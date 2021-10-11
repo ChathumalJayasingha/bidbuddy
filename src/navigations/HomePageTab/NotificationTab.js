@@ -1,10 +1,6 @@
 
 import React, {useState,useEffect} from 'react';
 import {Image, ImageBackground, StyleSheet, Text, ScrollView,TouchableOpacity, View,FlatList} from "react-native";
-import { Item } from 'react-native-paper/lib/typescript/components/List/List';
-
-
-
 
 
 function NotificationTab(){
