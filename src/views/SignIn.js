@@ -38,20 +38,34 @@ function SignIn(props) {
                 </View>
                 
                 <TouchableOpacity style={styles.forgotPasswordWrap}  >
-                    <Text style={styles.forgotPassword}  onPress={()=>{props.navigation.navigate('ForgotPassword')}} >Forgot Password ?
+                 
+                    <Text style={styles.rememberME} >Remember Me </Text >
+
+
+                    <Text style={styles.forgotPassword} 
+                     onPress={()=>{props.navigation.navigate('ForgotPassword')}} >Forgot Password ?
                     </Text >
+
                 </TouchableOpacity>
-                
+{/*                 
                 <TouchableOpacity style={styles.rememberMEWrap}>
           
-                    <Text style={styles.rememberME} >Remember Me </Text ></TouchableOpacity>
+                    
+                    
+                </TouchableOpacity> */}
                 
-                <TouchableOpacity onPress={()=>{props.navigation.navigate('SignUp')}} 
-                style={styles.registerContainer}><Text style={styles.dontRegisterYet} >Don't register yet ?  </Text ><Text style={styles.signUp} >Sign Up </Text ></TouchableOpacity>
+            
                 
-                <Button style={styles.signInButton} mode={'contained'} onPress={() => props.navigation.navigate('HomePage')}>
+                <Button style={styles.signInButton} mode={'contained'} 
+                onPress={() => props.navigation.navigate('HomePage')}>
                     Sign In
                 </Button>
+
+                <TouchableOpacity onPress={()=>{props.navigation.navigate('SignUp')}} 
+                style={styles.registerContainer}><Text style={styles.dontRegisterYet} >Don't register yet ? 
+                 </Text ><Text style={styles.signUp} >Sign Up </Text >
+                 </TouchableOpacity>
+
                 </ScrollView>
 
             </KeyboardAvoidingView>
@@ -70,19 +84,21 @@ const styles=StyleSheet.create({
     },txtFieldWrap:{
         flex:1,
     },forgotPasswordWrap:{
-        flex:1,margin:20,
+        flex:1,margin:20,flexDirection:'row'
     },forgotPassword:{
-        flex:1,color:colors.orange,textAlign:'right',
-    },rememberMEWrap:{
-        flex:1,margin:20,
-    },rememberME:{
-        flex:1,color:colors.gray,fontWeight:'bold'
+        flex:1,color:colors.orange,textAlign:'right',right:0
+    },
+    // rememberMEWrap:{
+    //     flex:1,margin:20,
+    // },
+    rememberME:{
+        flex:1,color:colors.gray,fontWeight:'bold',textAlign:'left'
     },registerContainer:{
-        flex:1,flexDirection:'row',marginLeft:20
+        flex:1,flexDirection:'row',marginTop:20,
     },dontRegisterYet:{
-        color:colors.gray,fontWeight:'bold'
+        flex:1,color:colors.gray,textAlign:'right',
     },signUp:{
-        color:colors.orange,fontWeight:'bold'
+       flex:1, color:colors.orange,fontWeight:'bold',textAlign:'left',
     },signInButton:{
         backgroundColor:colors.orange,marginTop:20,  padding: 6,borderRadius:10,
         

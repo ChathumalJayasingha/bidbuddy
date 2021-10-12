@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {ImageBackground, StyleSheet, Text, TouchableOpacity, Image,View,ScrollView, Touchable} from "react-native";
 import LinearGradient from 'react-native-linear-gradient';
 import { Button } from 'react-native-paper';
-import {constants} from '../configurations/constants'
+import {colors, constants} from '../configurations/constants'
 
 
 
@@ -39,6 +39,12 @@ export default function Payment(props){
                         ()=>props.navigation.navigate('HomePage')
                     }>
                     <Image  style={styles.lastContentImage} source={require('../assets/payment.jpg')} />
+                    <Button style={{flex:1,backgroundColor:colors.orange,margin:20,width:200,padding:4}} color="white" icon={require('../assets/coin_pay.png')}
+                        onPress={()=>{
+                            props.navigation.navigate('HomePage')
+                        }}
+                    >Pay Now</Button>
+
                     </TouchableOpacity>
                     
                 </View>
@@ -73,7 +79,7 @@ const styles = StyleSheet.create({
     },lastContentImageWrap:{
         flex:1,alignItems:'center',
     },lastContentImage:{
-        flex:1,width:200,height:100,justifyContent:'center',borderRadius:10,shadowColor:'red'
+        flex:1,width:200,height:130,justifyContent:'center',borderRadius:10,shadowColor:'red'
     },lastContentText:{
         flex:1,margin:30,fontSize:20,color:'red'
     },lastContentTextWrap:{

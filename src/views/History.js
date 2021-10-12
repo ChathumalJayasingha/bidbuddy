@@ -34,7 +34,7 @@ export default function History(){
                 </View>                
                 <View style={styles.contentWrap}>
                     <View style={styles.container}>
-                        <Table borderStyle={{borderWidth: 2, borderColor: colors.orange}}>
+                        <Table borderStyle={{borderWidth: 0, borderColor: colors.orange}}>
                             <Row data={tableHead} style={styles.head} textStyle={styles.text}/>
                             <Rows data={tableData} textStyle={styles.text}/>
                         </Table>

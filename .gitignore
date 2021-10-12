@@ -23,14 +23,13 @@ DerivedData
 
 # Android/IntelliJ
 #
-build/
 .idea
 .vscode
 .gradle
 android
 ios
 target
-src/assets
+
 local.properties
 *.iml
 

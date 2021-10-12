@@ -155,7 +155,9 @@ const styles=StyleSheet.create({
         borderRadius:10,
         marginTop:30,
     },btnSignIn:{
+        flex:1,
         flexDirection:'row',
+        justifyContent:'center',
         margin:30
     },txtAlreadyMember:{
         color: colors.gray,

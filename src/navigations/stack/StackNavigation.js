@@ -137,20 +137,14 @@ export default class StackNavigation extends Component {
 
                                   ),
                                   headerLeft: () => (
-                                      <View style={{flex: 1, flexDirection: 'row',borderWidth:1}}>
                                           <Image
                                               style={{
-                                                  flex: 1,
-                                                  width: null,
-                                                  resizeMode: 'contain',
-                                                  height: 'auto',
-                                                  //borderWidth:10,
-                                                  //backgroundColor: 'blue',    
-                                                  
+                                                 position:'absolute',borderWidth:2,
+                                                 width:'50%',height:'83%',marginLeft:7,
                                               }}
                                               source={require('../../assets/logo-5.png')    }
                                           />
-                                      </View>
+                                      
 
                                   ),
                               }}
@@ -237,7 +231,7 @@ export default class StackNavigation extends Component {
                                   headerShown: true,
                                   headerTitleAlign: 'center',
                                   headerTintColor: 'white',
-                                  title: 'Terms and Policies',
+                                  title: 'Manage Profile',
                               }}
                 />
 
